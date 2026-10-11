@@ -1,16 +1,16 @@
 @import url("colours.css");
 
 @font-face {
-    font-family: JetBrains Mono;
-    src: url(/font/JetBrainsMono.ttf) format("truetype");
+    font-family: JetBrainsMono;
+    src: url("fonts/JetBrainsMono.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap
 }
 
 @font-face {
-    font-family: Bricolage Grotesque;
-    src: url(/font/BricolageGrotesque.ttf) format("truetype-variations");
+    font-family: BricolageGrotesque;
+    src: url("fonts/BricolageGrotesque.ttf") format("truetype");
     font-weight: 200 800;
     font-stretch: 75% 100%;
     font-style: normal;
@@ -52,6 +52,34 @@
     height: 100%;
     object-fit: cover;
     object-position: bottom;
+}
+
+.identity-block {
+    display: flex;
+}
+
+.pfp {
+    width: 12vw;
+}
+
+.details {
+    flex: 1;
+    font-family: BricolageGrotesque,JetBrainsMono,sans-serif;
+}
+
+.details > h1 {
+    font-size: 4rem;
+}
+
+.details > p {
+    font-size: 1.25rem;
+}
+
+.pfp > img {
+    aspect-ratio: 1/1;
+    width: 10vw;
+    border-radius: 100%;
+    border: 5px solid var(--accent);
 }
 
 @media (max-width: 768px) {
