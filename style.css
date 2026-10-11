@@ -56,6 +56,7 @@
 
 .identity-block {
     display: flex;
+    margin-bottom: 5vh;
 }
 
 .pfp {
@@ -121,6 +122,18 @@
 
 .btn:hover .btn-icon {
     fill: var(--accent);
+}
+
+.about-block > h2 {
+    text-decoration: underline wavy;
+    font-family: BricolageGrotesque,JetBrainsMono,sans-serif;
+}
+
+.about-block > p {
+    margin-top: 3vh;
+    font-family: JetBrainsMono,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 @media (max-width: 768px) {
