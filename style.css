@@ -39,6 +39,7 @@
     color: var(--text);
     border-right: 10px solid var(--accent);
     border-top: 0px solid var(--accent);
+    scrollbar-width: none;
 
 }
 .right-split {
@@ -137,6 +138,86 @@ h2 {
     font-family: JetBrainsMono,sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
+}
+
+.projects-row {
+    margin-top: 2vh;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.5rem;
+    scrollbar-color: var(--accent) transparent;
+    scrollbar-width: auto;
+}
+
+.project-image {
+    flex: 0 0 180px;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.project-image > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.25s ease;
+}
+
+.projects-row::-webkit-scrollbar {
+    height: 12px;
+}
+
+.projects-row::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.projects-row::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.projects-row::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 999px;
+}
+
+.project-card {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    min-height: 300px;
+    background-color: var(--bg-secondary);
+    overflow: hidden;
+}
+
+.project-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: var(--main-bg);
+    text-decoration: none;
+}
+
+.project-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+}
+
+.project-content h3 {
+    font-family: BricolageGrotesque, JetBrainsMono, sans-serif;
+    font-size: 1.4rem;
+}
+
+.project-content p {
+    font-family: JetBrainsMono, sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 @media (max-width: 768px) {
