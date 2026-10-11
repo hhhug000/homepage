@@ -82,6 +82,47 @@
     border: 5px solid var(--accent);
 }
 
+.buttons a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    border-radius: 0;
+    border: 3px solid var(--accent);
+    background-color: var(--accent);
+    color: var(--main-bg);
+    transition: 0.25s all ease;
+}
+
+.btn > svg {
+    fill: var(--main-bg);
+    transition: 0.25s all ease;
+    padding-right: 0.5vw;
+}
+
+.btn-text {
+    text-align: center;
+    font-family: JetBrainsMono, sans-serif;
+    font-size: 1rem;
+    padding-left: 0.5vw;
+}
+
+.btn:hover {
+    background-color: var(--main-bg);
+    color: var(--accent);
+    fill: var(--accent);
+}
+
+.btn:hover .btn-icon {
+    fill: var(--accent);
+}
+
 @media (max-width: 768px) {
     .split {
         flex-direction: column-reverse;
@@ -103,5 +144,13 @@
 
     .right-split {
         height: 40vh;
+    }
+
+    .pfp {
+        width: 30vw;
+    }
+
+    .pfp > img {
+        width: 25vw;
     }
 }
