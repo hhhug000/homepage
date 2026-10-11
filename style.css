@@ -56,7 +56,10 @@
 
 .identity-block {
     display: flex;
-    margin-bottom: 5vh;
+}
+
+.content-block {
+    margin-top: 5vh;
 }
 
 .pfp {
@@ -124,7 +127,7 @@
     fill: var(--accent);
 }
 
-.about-block > h2 {
+h2 {
     text-decoration: underline wavy;
     font-family: BricolageGrotesque,JetBrainsMono,sans-serif;
 }
