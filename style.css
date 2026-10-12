@@ -287,6 +287,13 @@ h2 {
     margin-top: 0.2rem;
 }
 
+.footer-block {
+    margin-top: 5vh;
+    font-family: JetBrainsMono, sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+}
+
 @media (max-width: 768px) {
     .split {
         flex-direction: column-reverse;
