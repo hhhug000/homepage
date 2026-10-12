@@ -220,6 +220,73 @@ h2 {
     line-height: 1.4;
 }
 
+.skills-block > p {
+    margin-top: 3vh;
+    font-family: JetBrainsMono,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.skills-block > ul {
+    display: grid;
+    gap: 1rem;
+    margin: 2vh 0 0 1rem;
+    padding-left: 1.25rem;
+    font-family: JetBrainsMono,sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.45rem;
+}
+
+.github-block > p {
+    margin-top: 3vh;
+    font-family: JetBrainsMono,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.github-block > p > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.github-block > p > a:hover {
+    text-decoration: underline;
+}
+
+.github-block > p > a:visited {
+    color: #fff;
+}
+
+.github-block .calendar {
+    margin-top: 2vh;
+    background-color: var(--gh-bg-color);
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1vh;
+    border-radius: 0.5rem;
+}
+
+.skills-block li {
+    padding-left: 0.35rem;
+}
+
+.skills-block li strong,
+.skills-block li span {
+    display: block;
+}
+
+.skills-block li strong {
+    color: var(--accent);
+    font-family: BricolageGrotesque, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+.skills-block li span {
+    margin-top: 0.2rem;
+}
+
 @media (max-width: 768px) {
     .split {
         flex-direction: column-reverse;

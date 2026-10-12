@@ -30,3 +30,4 @@ async function fetchTodayCodingTime() {
 }
 
 fetchTodayCodingTime();
+GitHubCalendar(".calendar", "hhhug000", { responsive: true });
