@@ -25,15 +25,17 @@
 
 .split {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
 
 .left-split {
     flex: 1;
+    min-width: 0;
     height: 100%;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 40px;
     background-color: var(--main-bg);
     color: var(--text);
@@ -305,16 +307,18 @@ h2 {
     .right-split {
         width: 100%;
         height: auto;
-        overflow: visible;
     }
 
     .left-split {
         border-right: 0px solid var(--accent);
         border-top: 10px solid var(--accent);
+        overflow-x: hidden;
+        overflow-y: visible;
     }
 
     .right-split {
         height: 40vh;
+        overflow: hidden;
     }
 
     .pfp {
